@@ -1,0 +1,25 @@
+<html>
+ <head><title>MegaBytes Convertor</head></title>
+ <body>
+ <p><b>MegaBytes Convertor</b></p>
+ <input id="txtMegabytes" type="text">
+ <input id="btnKilobytes" type="button" value="Kilobytes" onclick="btnKilobytes_onclick()"/>
+ <input id="btnGigabytes" type="button" value="Gigabytes" onclick="btnGigabytes_onclick()"/>
+ <p id="parResult" style="background-color: Red;"/></p>
+ </body>
+</html>
+
+<script language "javascript">
+
+ var conv = 1024;
+ 
+ function btnKilobytes_onclick(){
+  parResult.innerText = (txtMegabytes.value * conv);
+ }
+ 
+ function btnGigabytes_onclick(){
+  parResult.innerText = (txtMegabytes.value / conv);
+ }
+ 
+ 
+</script>
